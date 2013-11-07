@@ -34,14 +34,14 @@ public class ProcJobs extends Job {
 	@Override
 	public void doJob() {
 		 System.out.println("Jobs Working");
-         ProcJobs jobs = new ProcJobs();
+         //ProcJobs jobs = new ProcJobs();
          try {
-                 String booksLost = jobs.consumer();
+                 String booksLost = consumer();
                  if (booksLost!=("[]"))
-                         jobs.HttpPOST(booksLost);
+                         HttpPOST(booksLost);
                  ArrayList<String> booksReceived = new ArrayList<String>();
                  booksReceived = HttpGET();
-                 jobs.Publisher(booksReceived);
+                 Publisher(booksReceived);
          } catch (Exception e) {
                  System.out.println("Unexpected error!");
          }
