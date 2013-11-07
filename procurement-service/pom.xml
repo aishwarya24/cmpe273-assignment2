@@ -7,7 +7,6 @@
 	<artifactId>procurement-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Procurement Service Scheduler</name>
-
 	<properties>
 		<dropwizard.version>0.6.2</dropwizard.version>
 	</properties>
